@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: darkorange;
+        }
+    </style>
+    <script>
+        setInterval(function() {   //Opdaterer siden hvert 5000ms 5sekund.
+            location.reload();
+        }, 10000);
+    </script>
+</head>
+<body>
+<h1 style="color:black; font-size: 150px; text-align: center;"> Roskilde Festival Bod 1</h1> 
+<h2 style="color:black; font-size: 100px; text-align: center;">Du er nu nummer:</h2>
+<div style="color: black; font-size: 400px; text-align: center;" class="counter">{{counter}}</div> 
+<p style="color:forestgreen; font-size: 50px; text-align: right">Smart Queue</p>
+<h2 style="color:black; font-size: 100px; text-align: center;">Estimeret tid:</h2>
+<div style="color: black; font-size: 100px; text-align: center;" class="estimated_time">{{estimated_time}} minutter</div> 
+
+</body>
+</html>

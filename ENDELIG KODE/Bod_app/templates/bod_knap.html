@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Næste i køen</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: darkorange;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+        <button style="color: black; font-size: 150px;" onclick="næste()">Næste!</button>
+      </div>
+      
+
+    <script>
+        function næste() {
+            $.ajax({
+                url: '/call-next',
+                type: 'GET',
+                success: function(response) {
+                    console.log(response);
+                }
+            });
+        }
+    </script>
+</body>
+</html>
